@@ -66,7 +66,7 @@
 .program__description {
   font-size: 14px;
   line-height: 18px;
-  margin-bottom: 38px;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -94,6 +94,7 @@
 }
 
 .program__link {
+  display: block;
   width: 134px;
   color: #000000;
   font-family: $font-family-secondary;
@@ -107,9 +108,10 @@
   background-image: url("../../images/icons/stack.svg#arrow");
   background-repeat: no-repeat;
   background-size: 24px 12px;
-  background-position: right;
+  background-position: right 8px center;
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    line-height: 30px;
     width: 165px;
     padding-right: 57px;
   }

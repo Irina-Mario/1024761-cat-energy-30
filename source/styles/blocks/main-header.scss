@@ -1,9 +1,10 @@
 .main-header {
-  outline: 5px solid opacify(green, 0.5);
-  outline-offset: -5px;
-  
   position: relative;
   min-width: 320px;
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+    margin-bottom: 65px;
+  }
   @media (min-width: $desktop-width) {
     background-image: linear-gradient(to right, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%);;
     opacity: 0.85;
@@ -12,22 +13,22 @@
 }
 
 .main-header__container {
-  min-height: 65px;
-  
   outline: 5px solid opacify(rgb(55, 0, 128), 0.5);
   outline-offset: -5px;
- 
+  position: relative;
+
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    min-height: 50px; 
+    min-height: 50px;
     width: 100%;
+
   }
   @media (min-width: $desktop-width) {
-    min-height: 59px; 
-  }  
+    min-height: 59px;
+  }
 }
 
 .main-header__toggle {
@@ -40,7 +41,7 @@
   background-color: #ffffff;
   @media (min-width: $tablet-width) {
     display: none;
-  } 
+  }
 }
 
 .main-header__toggle:hover,
@@ -71,15 +72,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-top: 13px;
-  padding-bottom: 14px;
-
-  outline: 5px solid opacify(rgb(128, 0, 38), 0.5);
-  outline-offset: -5px;
+  padding: 13px 0;
 
   @media (min-width: $tablet-width) {
     padding: 0;
 
-  } 
+
+  }
 }
 
